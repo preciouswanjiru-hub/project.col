@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Control Protocol/Internet Protocol</title>
+</head>
+    <body>
+        <h1>Transmission Control Protocol/Internet Protocol</h1>
+        <p> This is the foundational communications framework that enables web development by standardizing how data is exchanged via the internet.
+            It has 4 layers.
+        </p>
+        <h4>Application Layer</h4>
+        <p>This is where the web applications interact with the network. Consists of the high-level protocols like HTTP, FTP, and SMTP.</p>
+        <h4>Transport Layer</h4>
+        <p> Ensures reliable and efficient delivery of data between devices. It performs:
+            <ol type="i">
+                <li>Segmentation and reassembly- Breaks data into smaller packets for transmission and reassembles them at the destination.</li>
+                <li>Connection management- Establishes, maintains and terminates connections between devices.</li>
+                <li>Flow control- Manages the rate of data transmission to prevent congestion.</li>
+                <li>Error detection and correction- Uses checksums to detect errors in transmitted data and requests retransmission if necessary.</li>
+            </ol>
+        TCP- Used when reliablitity and accuracy are essential.
+        UDP- Used when speed is more essential than perfect accuracy. </p>
+        <h4>Internet Layer</h4>
+        <p> Responsible for addressing, packaging and routing of data packets. It performs:
+            <ol type="i">
+                <li>Logical addressing- Assigns unique IP addresses to devices on the network.</li>
+                <li>Packet routing- Determines the best path for data packets to reach their destination.</li>
+                <li>Fragmentation and reassembly- Breaks large packets into smaller fragments for transmission and reassembles them at the destination.</li>
+                <li>Protocol support- Provides services for other protocols to use.</li>
+            </ol>
+        <h4>Network Access Layer</h4>
+        <p>Responsible for the physical transmission of data over network hardware. It performs:</p>
+        <ol type="i">
+            <li>Physical addressing- Uses MAC addresses to identify devices on the local network.</li>
+            <li>Data framing- Encapsulates data packets into frames for transmission over the physical medium.</li>
+            <li>Error detection- Uses techniques like checksums to detect errors in transmitted frames.</li>
+            <li>Media access control- Manages access to the physical medium to prevent collisions and ensure efficient use of the network.</li>
+            <li>Access control- Ensures only authorized devices can access the network.</li>
+        </p>
+
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20251215161451367264/working-of-tcp.webp" alt="Working of TCP">
+
+
+
+
+
+
+    </body>
+</body>
+</html>
+</html>
