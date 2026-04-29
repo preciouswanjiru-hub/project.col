@@ -27,12 +27,25 @@
 <h5>DNS Resolution Process</h5>
 <p> When a user enters a domain name into a web browser, the DNS resolution process begins.
      The browser first checks its local cache for the IP address associated with the domain name.
-      If it is not found, the browser sends a query to the configured DNS resolver, which then 
-      follows a series of steps to resolve the domain name to an IP address. The resolver may 
-      query multiple DNS servers, starting from the root DNS servers and working down through the
-       hierarchy until it reaches the authoritative DNS server for the domain. Once the IP address 
-       is obtained, it is returned to the browser, allowing it to establish a connection with the web server
-        hosting the requested resource.</p>
+     If it is not found, the browser sends a query to the configured DNS resolver, which then 
+    follows a series of steps to resolve the domain name to an IP address. The resolver may 
+    query multiple DNS servers, starting from the root DNS servers and working down through the
+    hierarchy until it reaches the authoritative DNS server for the domain. Once the IP address 
+    is obtained, it is returned to the browser, allowing it to establish a connection with the web server
+    hosting the requested resource.</p>
 <img src="images/address_resolution_in_dns.webp" alt="Image of the DNS resolution process">
+<h4>Roles of Domain Name Servers</h4>
+<ol type ="i"
+<li> Name Resolution- DNS servers are responsible for translating human-readable domain names into
+     machine-readable IP addresses, allowing users to access websites and other online resources using 
+     easy-to-remember names.</li>
+<li> Load Distribution- DNS servers can distribute incoming traffic across multiple servers hosting the
+     same website or service, helping to balance the load and improve performance.</li>
+<li> Caching- DNS servers can cache previously resolved domain names and their corresponding 
+    IP addresses, reducing the time it takes to resolve subsequent queries for the same domain 
+    and improving overall efficiency.</li>
+<li> Security- DNS servers can implement security measures to protect against various types of cyber
+     threats, such as DNS spoofing and DDoS attacks. They can also support secure communication
+      protocols like DNSSEC to ensure the integrity and authenticity of DNS responses.</li> 
 </body>
 </html>

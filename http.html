@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypertext Transfer Protocol</title>
+</head>
+<body>
+    <h1>Hypertext Transfer Protocol (HTTP)</h1>
+    <p> Hypertext Transfer Protocol (HTTP) is a set of rules that lets your browser and web servers
+        communicate. Hypertext is a way of structuring text so that it can contain links called
+    hyperlinks to other documents or resources. Thus HTTP is the protocol used to transfer the hypertext
+between the web browser and the web server. </p>
+<h4>The HTTP Request and Response Cycle</h4>
+<p> When a user enters a URL into a web browser, the browser sends an HTTP request to the web server
+    hosting the requested resource. The server processes the request and sends back an HTTP response, which
+    contains the requested resource or an error message if the resource cannot be found or accessed. 
+    This cycle of sending requests and receiving responses is fundamental to how the web works, allowing users 
+    to access and interact with web content seamlessly.</p>
+<h5>HTTP Request Methods</h5>
+<p> The browser asks the server for information.</p>
+<ol type="i">
+<li> HTTP Version- eg HTTP/1.1 or HTTP/2 </li>
+<li>URL- The specific address of the resource </li>
+<li>HTTP Method- The action to be performed on the resource, such as GET, POST, PUT, or DELETE </li>
+<li>HTTP Request Headers- Additional information about the request, such as the user agent or accepted content types </li>
+<li>HTTP Request Body- The data sent with the request, typically used with POST and PUT methods to submit form data or upload files </li>
+
+</ol>
+<h5>HTTP Response</h5>
+<p>May include data such as form submissions or other content.</p>
+<ol type="i">
+    <li>HTTP status code- The number indicating the outcome of the request i.e whether it was
+        successful or not. Example: 1xx means informational, 2xx means success, 3xx means redirection, 4xx means client error 
+        and 5xx means server error.</li>
+    <li>HTTP Response Headers- Additional information about the response, such as content type or caching directives </li>
+    <li>HTTP Response Body- The actual content of the response, such as the HTML of a web page or the data returned from an API </li>
+</ol>
+<img src="images/ImageOfHTTPRequestResponse-660x374.png" alt="Image of the HTTP request and response cycle">
+    
+
+</body>
+</html>
