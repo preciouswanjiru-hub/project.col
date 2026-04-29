@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Name Server</title>
+</head>
+<body>
+    <h1>Domain Name Server (DNS)</h1>
+    <p>It is an internet service that translated human-readable names into machine-readable
+        IP addressed. Operates in a hierachical and distributed manner. It is essential for the functioning of
+         the internet, allowing users to access websites and other online resources using easy-to-remember domain names 
+         instead of complex IP addresses. DNS servers are responsible for resolving domain names to their 
+         corresponding IP addresses, enabling communication between devices on the internet.
+ </p>
+ <h4>Structure of DNS</h4>
+ <ol type="i"
+ <li> Root DNS Servers- The highest level of the DNS hierarchy, responsible for managing the 
+    top-level domains (TLDs) such as .com, .org and .net.</li>
+<li> Top-Level Domain (TLD) DNS Servers- These servers manage specific TLDs and are responsible for
+    directing queries to the appropriate authoritative DNS servers for domains within their TLD.</li>
+<li>Second-Level Domains (SLD) DNS Servers- These servers manage domains that are one level below 
+    the TLD and are responsible for resolving queries for those specific domains.</li>
+<li> Authoritative DNS Servers- These servers hold the actual DNS records for specific domains 
+    and are responsible for providing the IP address associated with a domain name when queried.</li>
+</ol>
+<h5>DNS Resolution Process</h5>
+<p> When a user enters a domain name into a web browser, the DNS resolution process begins.
+     The browser first checks its local cache for the IP address associated with the domain name.
+      If it is not found, the browser sends a query to the configured DNS resolver, which then 
+      follows a series of steps to resolve the domain name to an IP address. The resolver may 
+      query multiple DNS servers, starting from the root DNS servers and working down through the
+       hierarchy until it reaches the authoritative DNS server for the domain. Once the IP address 
+       is obtained, it is returned to the browser, allowing it to establish a connection with the web server
+        hosting the requested resource.</p>
+<img src="images/address_resolution_in_dns.webp" alt="Image of the DNS resolution process">
+</body>
+</html>
