@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multitier Architecture</title>
+</head>
+<body>
+    <h1>Multitier Architecture</h1>
+    <p>Multitier architecture, also known as n-tier architecture, is a software design pattern
+         that separates an application into multiple layers or tiers. Each tier is responsible 
+         for specific functions and communicates with other tiers to provide a complete application. 
+         The most common tiers in a multitier architecture are the presentation tier, the application
+          tier and the data tier.</p>
+    
+    <h5>Presentation Tier</h5>
+    <p>The presentation tier, also known as the user interface tier, is responsible for handling
+         the user interface and user interactions. It is the layer that users interact with directly
+          and is typically implemented using technologies such as HTML, CSS and JavaScript for web 
+          applications or frameworks like React or Angular for more complex applications. It handles user
+        interactions and displays data in human-readable format.</p>
+    <h5>Application Tier</h5>
+    <p>The application tier, also known as the business logic tier or intermediary tier, is responsible for processing       
+         the business logic and rules of the application. It acts as an intermediary between the presentation
+          tier and the data tier, handling requests from the presentation tier and interacting with the data
+           tier to retrieve or manipulate data. This tier is typically implemented using programming languages
+            such as Java, C# or Python.</p>
+    <h5>Data Tier</h5>
+    <p>The data tier, also known as the database tier or backend tier, is responsible for managing the data and 
+        database interactions of the application. It is where the application's data is stored, retrieved
+         and manipulated. This tier typically uses a database management system (DBMS) such as MySQL,
+          PostgreSQL or MongoDB to handle data storage and retrieval. It stores application data in a
+        structured format thus is accessible to other tiers</p>
+    
+    <h4>Advantages of Multitier Architecture</h4>
+    <ul>
+        <li>Scalability: Multitier architecture allows for easy scalability as each tier can be scaled
+             independently based on the application's needs.</li>
+        <li>Maintainability: The separation of concerns in multitier architecture makes it easier to
+             maintain and update the application, as changes in one tier do not affect the others.</li>
+        <li>Flexibility: Multitier architecture allows for flexibility in technology choices, as different
+             tiers can be implemented using different technologies based on their specific requirements.</li>
+        <li>Improved Security: By separating the presentation, application and data tiers, multitier 
+            architecture can enhance security by limiting access to sensitive data and business logic.</li>
+    </ul>
+    <img src="images/Tiered-Architecture-in-Distributed-Systems-(1).webp" alt="Image of the multitier architecture">    
+    </body>
+</html>
